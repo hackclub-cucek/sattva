@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import ArrowDownSLineIcon from 'remixicon-react/ArrowDownSLineIcon';
 
 export default function CountDown() {
     const [days, setDays] = useState();
@@ -36,7 +37,7 @@ export default function CountDown() {
 
     return (
         <div className="bg-black text-white overflow-hidden h-screen">
-            <div className='flex flex-col xl:space-y-16 space-y-7 relative items-center font-montserrat z-50 lg:absolute xl:px-20 px-4 xl:pt-44 pt-32'>
+            <div className='flex flex-col xl:space-y-16 space-y-7 relative items-center font-montserrat z-50 lg:absolute xl:px-20 px-4 xl:pt-36 pt-24'>
                 <div className='flex lg:space-x-4 space-x-2'>
                     <div className='flex-col space-y-2 xl:py-6 py-3 xl:px-8 px-4 border xl:w-[168px] xl:h-[168px] w-20 h-20 rounded-sm border-white text-center'>
                         <h2 className='font-bold xl:text-7xl sm:text-4xl text-2xl'>{days}</h2>
@@ -56,9 +57,15 @@ export default function CountDown() {
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className='flex-col space-y-4 text-center'>
+                    <div className='flex-col space-y-4 text-center items-center justify-center'>
                         <h1 className='font-ahsing uppercase xl:text-9xl md:text-8xl sm:text-7xl text-5xl'>sattva&apos;22</h1>
-                        <p className='font-montserrat xl:text-xl text-sm font-normal uppercase tracking-wildest'>coming soon</p>
+                        <p className='font-montserrat xl:text-xl text-sm font-normal tracking-wildest'>Registration Open</p>
+                        <div className='flex font-montserrat xl:text-xl text-sm font-normal text-center items-center justify-center'>
+                            <span>
+                                <ArrowDownSLineIcon className='w-6 h-6' />
+                            </span>
+                        </div>
+
                     </div>
                 </div>
             </div>

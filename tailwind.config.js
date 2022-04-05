@@ -10,7 +10,7 @@ module.exports = {
         montserrat: "'Montserrat', sans-serif"
       },
       letterSpacing: {
-        wildest: '0.4em',
+        wildest: '0.2em',
       },
     },
   },

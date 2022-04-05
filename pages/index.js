@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head'
 import CountDown from '../components/countDown'
+import OffStageEvents from '../components/offStageEvents'
+import FeeDetails from '../components/feeDetails'
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
 
       <main className="">
         <CountDown />
+        <FeeDetails />
+        <OffStageEvents />
       </main>
     </div>
   )
