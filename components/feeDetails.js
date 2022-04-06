@@ -2,30 +2,36 @@ import React from 'react'
 
 export default function FeeDetails() {
     return (
-        <div className='flex flex-col bg-black justify-center items-start lg:items-center font-montserrat text-white pt-9 pb-12 lg:4 px-4'>
-            <h1 className='text-3xl lg:text-6xl font-semibold pb-6'>Fee Details</h1>
-            <table className='flex flex-col space-y-3'>
-                <tr className='flex justify-between w-full px-5 py-4 text-left rounded-lg bg-white bg-opacity-10'>
-                    <td className='text-sm lg:text-lg font-semibold'>Individual Item Fee</td>
-                    <td className='text-sm lg:text-lg font-normal pl-2'>: 30/-</td>
-                </tr>
-                <tr className='flex justify-between w-full px-5 py-4 text-left rounded-lg bg-white bg-opacity-10'>
-                    <td className='text-sm lg:text-lg font-semibold '>Group Item Fee</td>
-                    <td className='text-sm lg:text-lg font-normal  pl-2'>: 20/- (Per Participant)</td>
-                </tr>
-                <tr className='flex justify-between w-full px-5 py-4 text-left rounded-lg bg-white bg-opacity-10'>
-                    <td className='text-sm lg:text-lg font-semibold '>Spot Registdation Fee</td>
-                    <td className='text-sm lg:text-lg font-normal  pl-2'>: 60/-</td>
-                </tr>
-                <tr className='flex justify-between w-full px-5 py-4 text-left rounded-lg bg-white bg-opacity-10'>
-                    <td className='text-sm lg:text-lg font-semibold '>Substitution Fee</td>
-                    <td className='text-sm lg:text-lg font-normal  pl-2'>: 40/-</td>
-                </tr>
-                <tr className='flex justify-between w-full px-5 py-4 text-left rounded-lg bg-white bg-opacity-10'>
-                    <td className='text-sm lg:text-lg font-semibold '>Appeal Fee</td>
-                    <td className='text-sm lg:text-lg font-normal  pl-2'>: 750/-</td>
-                </tr>
-            </table>
+        <div className='flex flex-col lg:flex-row justify-between bg-black text-white lg:pt-20 pt-32 lg:px-24 px-4'>
+            <div className='flex flex-col lg:space-y-2 pb-6 lg:pb-0'>
+                <h2 className='font-roboto font-bold lg:text-6xl text-2xl'>Fee Details</h2>
+                <p className='lg:flex hidden font-roboto font-normal lg:text-2xl'>All Events</p>
+            </div>
+            <div className='flex flex-col w-full lg:max-w-3xl space-y-3 lg:space-y-2 font-roboto font-semibold text-xl lg:text-2xl'>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <p>Individual Item Fee</p>
+                    <p>30/-</p>
+                </div>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <div className='flex flex-col space-y-1 lg:space-y-2'>
+                        <p>Group Item</p>
+                        <p className='font-normal lg:text-xl text-base'>Per Participant</p>
+                    </div>
+                    <p>20/-</p>
+                </div>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <p>Spot Registeration</p>
+                    <p>60/-</p>
+                </div>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <p>Substitution</p>
+                    <p>40/-</p>
+                </div>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <p>Appeal</p>
+                    <p>750/-</p>
+                </div>
+            </div>
         </div>
     )
 }
