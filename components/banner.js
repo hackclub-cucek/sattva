@@ -37,7 +37,7 @@ export default function Banner() {
     });
 
     return (
-        <div className="bg-black text-light h-screen bg-center lg:bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: `url(/images/banner.png)` }}>
+        <div className="bg-black text-light h-screen bg-center lg:bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: `url(/images/banner3.png)` }}>
             <div className='flex flex-col justify-center items-center h-screen'>
                 <div className='flex lg:space-x-4 space-x-2 font-roboto '>
                     <div className='flex flex-col text-center lg:w-24 lg:h-24 w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
