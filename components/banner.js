@@ -40,27 +40,27 @@ export default function Banner() {
         <div className="bg-black text-light h-screen bg-center lg:bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: `url(/images/banner.png)` }}>
             <div className='flex flex-col justify-center items-center h-screen'>
                 <div className='flex lg:space-x-4 space-x-2 font-roboto '>
-                    <div className='flex flex-col text-center lg:w-[171px] lg:h-[171px] w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
-                        <h2 className='lg:text-7xl text-4xl font-bold'>{days}</h2>
-                        <p className='lg:text-xl text-xs font-normal uppercase'>days</p>
+                    <div className='flex flex-col text-center lg:w-24 lg:h-24 w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
+                        <h2 className='lg:text-5xl text-4xl font-bold'>{days}</h2>
+                        <p className='lg:text-base text-xs font-normal uppercase'>days</p>
                     </div>
-                    <div className='flex flex-col text-center lg:w-[171px] lg:h-[171px] w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
-                        <h2 className='lg:text-7xl text-4xl font-bold'>{hours}</h2>
-                        <p className='lg:text-xl text-xs font-normal uppercase'>hours</p>
+                    <div className='flex flex-col text-center lg:w-24 lg:h-24 w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
+                        <h2 className='lg:text-5xl text-4xl font-bold'>{hours}</h2>
+                        <p className='lg:text-base text-xs font-normal uppercase'>hours</p>
                     </div>
-                    <div className='flex flex-col text-center lg:w-[171px] lg:h-[171px] w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
-                        <h2 className='lg:text-7xl text-4xl font-bold'>{minutes}</h2>
-                        <p className='lg:text-xl text-xs font-normal uppercase'>minutes</p>
+                    <div className='flex flex-col text-center lg:w-24 lg:h-24 w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
+                        <h2 className='lg:text-5xl text-4xl font-bold'>{minutes}</h2>
+                        <p className='lg:text-base text-xs font-normal uppercase'>minutes</p>
                     </div>
-                    <div className='flex flex-col text-center lg:w-[171px] lg:h-[171px] w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
-                        <h2 className='lg:text-7xl text-4xl font-bold'>{seconds}</h2>
-                        <p className='lg:text-xl text-xs font-normal uppercase'>seconds</p>
+                    <div className='flex flex-col text-center lg:w-24 lg:h-24 w-20 h-20 bg-black bg-opacity-60 rounded-full justify-center items-center'>
+                        <h2 className='lg:text-5xl text-4xl font-bold'>{seconds}</h2>
+                        <p className='lg:text-base text-xs font-normal uppercase'>seconds</p>
                     </div>
                 </div>
                 <div className='flex flex-col text-center lg:pt-14 pt-8'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 className='font-plaster font-normal text-5xl lg:text-9xl'>Sattva’22</h1>
-                        <p className='font-roboto font-normal text-sm lg:text-3xl uppercase tracking-wildestest'>Registration is now open</p>
+                        <h1 className='font-plaster font-normal text-5xl lg:text-7xl'>Sattva’22</h1>
+                        <p className='font-roboto font-normal text-sm lg:text-xl uppercase tracking-wildestest'>Registration is now open</p>
                     </div>
                 </div>
                 <div className='flex flex-col absolute text-center object-bottom lg:bottom-10 bottom-2'>
