@@ -1,4 +1,5 @@
 import React from 'react'
+import Download2FillIcon from 'remixicon-react/Download2FillIcon';
 
 export default function FeeDetails() {
     return (
@@ -28,7 +29,10 @@ export default function FeeDetails() {
                     <p>40/-</p>
                 </div>
                 <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
-                    <p>Appeal</p>
+                    <a href='./doc/appeal_form_SATTVA.docx' className='flex items-center space-x-2 hover:opacity-40 cursor-pointer'>
+                        <p>Appeal</p>
+                        <Download2FillIcon />
+                    </a>
                     <p>750/-</p>
                 </div>
             </div>
