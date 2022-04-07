@@ -5,6 +5,7 @@ import FeeDetails from '../components/feeDetails'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
 import Leaderboard from '../components/leaderboard'
+import LiveEvents from '../components/liveEvents'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <main className="">
         <Banner />
         {/* <Leaderboard /> */}
+        <LiveEvents />
         <FeeDetails />
         <OffStageEvents />
         <Footer />

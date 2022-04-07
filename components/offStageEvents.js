@@ -6,8 +6,8 @@ export default function OffStageEvents() {
     return (
         <div className='flex flex-col lg:flex-row justify-between bg-black text-white lg:pt-36 pt-20 lg:px-24 px-4'>
             <div className='flex flex-col lg:space-y-2 pb-6 lg:pb-0'>
-                <h2 className='lg:flex hidden font-roboto font-bold lg:text-4xl'>Event Schedule</h2>
-                <p className='font-roboto lg:font-normal font-bold lg:text-2xl text-2xl'>Off Stage Events</p>
+                <h2 className='flex font-roboto font-bold lg:text-4xl text-2xl'>Event Schedule</h2>
+                <p className='font-roboto font-normal lg:text-2xl text-base'>Off Stage Events</p>
             </div>
             <div className="flex flex-col w-full lg:max-w-3xl space-y-3 lg:space-y-2 font-roboto font-semibold text-xl lg:text-2xl">
                 <Disclosure>

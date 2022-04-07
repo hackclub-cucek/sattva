@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         light: '#FAFAFA',
         shade: '#1F2020',
+        grayshade: '#1F1F1F',
       }
     },
   },
