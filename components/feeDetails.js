@@ -28,12 +28,32 @@ export default function FeeDetails() {
                     <p>Substitution</p>
                     <p>40/-</p>
                 </div>
-                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                {/* <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
                     <a href='./doc/appeal_form_SATTVA.docx' className='flex items-center space-x-2 hover:opacity-40 cursor-pointer'>
                         <p>Appeal</p>
                         <Download2FillIcon />
                     </a>
                     <p>750/-</p>
+                </div> */}
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <a href='./doc/appeal_form_SATTVA.docx' className='flex items-center space-x-2 hover:opacity-40 cursor-pointer'>
+                        <div className='flex flex-col space-y-1 lg:space-y-2'>
+                            <p>Appeal</p>
+                            <p className='font-normal lg:text-base text-base'>Individual Item</p>
+                        </div>
+                        <Download2FillIcon />
+                    </a>
+                    <p>500/-</p>
+                </div>
+                <div className='flex justify-between lg:px-5 px-4 py-[18px] bg-white bg-opacity-10 rounded-lg'>
+                    <a href='./doc/appeal_form_SATTVA.docx' className='flex items-center space-x-2 hover:opacity-40 cursor-pointer'>
+                        <div className='flex flex-col space-y-1 lg:space-y-2'>
+                            <p>Appeal</p>
+                            <p className='font-normal lg:text-base text-base'>Group Item</p>
+                        </div>
+                        <Download2FillIcon />
+                    </a>
+                    <p>1000/-</p>
                 </div>
             </div>
         </div>
