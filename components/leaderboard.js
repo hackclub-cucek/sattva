@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Leaderboard({data}) {
+    console.log(data)
     return (
         <div className='flex flex-col lg:flex-row justify-between bg-black text-white lg:pt-20 pt-32 lg:px-24 px-4'>
             <div className='flex flex-col lg:space-y-2 pb-6 lg:pb-0'>
