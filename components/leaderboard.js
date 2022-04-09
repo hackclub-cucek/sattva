@@ -27,9 +27,9 @@ export default function Leaderboard({ data }) {
           >
             <div className='flex justify-start space-x-10'>
               <p className='text-left'>{index + 1}</p>
-              <p className='text-left'>{item[0]}</p>
+              <p className='text-left'>{item.title}</p>
             </div>
-            <p className='text-right'>{item[1]}</p>
+            <p className='text-right'>{item.description}</p>
           </div>
         ))}
       </div>

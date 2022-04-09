@@ -6,9 +6,10 @@ import Banner from '../components/banner';
 import Footer from '../components/footer';
 import Leaderboard from '../components/leaderboard';
 import LiveEvents from '../components/liveEvents';
-import { google } from 'googleapis';
+import { getDataFromSheets } from './api/sheets';
 
-export default function Home({ rows }) {
+export default function Home({ data }) {
+  console.log(data, 'Working..');
   return (
     <div className=''>
       <Head>
@@ -31,7 +32,7 @@ export default function Home({ rows }) {
 
       <main className=''>
         <Banner />
-        <Leaderboard data={rows} />
+        <Leaderboard data={data} />
         {/* <LiveEvents /> */}
         <FeeDetails />
         {/* <OffStageEvents /> */}
@@ -41,23 +42,33 @@ export default function Home({ rows }) {
   );
 }
 
-export async function getStaticProps() {
-  const auth = await google.auth.getClient({
-    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-  });
-  const sheets = google.sheets({ version: 'v4', auth });
-
-  const range = `data!A2:B8`;
-  const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SHEET_ID,
-    range,
-  });
-
-  const rows = response.data.values;
+export async function getStaticProps(context) {
+  const sheet = await getDataFromSheets();
   return {
     props: {
-      rows,
+      data: sheet.slice(1, sheet.length), // remove sheet header
     },
-    revalidate: 10,
+    revalidate: 1, // In seconds
   };
 }
+
+// export async function getStaticProps() {
+//   const auth = await google.auth.getClient({
+//     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+//   });
+//   const sheets = google.sheets({ version: 'v4', auth });
+
+//   const range = `data!A2:B8`;
+//   const response = await sheets.spreadsheets.values.get({
+//     spreadsheetId: process.env.SHEET_ID,
+//     range,
+//   });
+
+//   const rows = response.data.values;
+//   return {
+//     props: {
+//       rows,
+//     },
+//     revalidate: 10,
+//   };
+// }
