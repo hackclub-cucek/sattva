@@ -6,11 +6,11 @@ import { Disclosure } from '@headlessui/react'
 export default function FeeDetails() {
     return (
         <div className='flex flex-col lg:flex-row justify-between bg-black text-white lg:pt-20 pt-32 lg:px-24 px-4'>
-            <div className='lg:max-w-xs w-full px-4'>
+            <div className='lg:max-w-xs w-full lg:pr-4 pr-0'>
             <div className='flex flex-col space-y-2 pb-6 lg:pb-0'>
                 <h2 className='font-roboto font-bold lg:text-4xl text-2xl'>Fee Details</h2>
                 <p className='flex font-roboto font-normal lg:text-xl text-base'>All Events</p>
-                <div className='flex flex-col space-y-6 rounded-lg border-2 border-white border-opacity-50 px-[10px] py-3'>
+                <div className='flex flex-col space-y-6 rounded-lg border-2 border-white border-opacity-50 px-5 py-[18px]'>
                 <Disclosure>
                     {({ open }) => (
                         <>
