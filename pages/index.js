@@ -9,7 +9,6 @@ import LiveEvents from '../components/liveEvents';
 import { getDataFromSheets } from './api/sheets';
 
 export default function Home({ data }) {
-  console.log(data, 'Working..');
   return (
     <div className=''>
       <Head>
@@ -51,24 +50,3 @@ export async function getStaticProps(context) {
     revalidate: 1, // In seconds
   };
 }
-
-// export async function getStaticProps() {
-//   const auth = await google.auth.getClient({
-//     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-//   });
-//   const sheets = google.sheets({ version: 'v4', auth });
-
-//   const range = `data!A2:B8`;
-//   const response = await sheets.spreadsheets.values.get({
-//     spreadsheetId: process.env.SHEET_ID,
-//     range,
-//   });
-
-//   const rows = response.data.values;
-//   return {
-//     props: {
-//       rows,
-//     },
-//     revalidate: 10,
-//   };
-// }

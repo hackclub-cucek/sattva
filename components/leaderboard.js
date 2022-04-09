@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Leaderboard({ data }) {
-  console.log(data, 'Working..');
   return (
     <div className='flex flex-col lg:flex-row justify-between bg-black text-white lg:pt-20 pt-32 lg:px-24 px-4'>
       <div className='flex flex-col lg:space-y-2 pb-6 lg:pb-0'>
@@ -25,7 +24,7 @@ export default function Leaderboard({ data }) {
             key={index}
             className='flex justify-between px-5 py-4 rounded-lg border-2 border-white border-opacity-50 '
           >
-            <div className='flex justify-start space-x-10'>
+            <div className='flex justify-start space-x-10 pr-4'>
               <p className='text-left'>{index + 1}</p>
               <p className='text-left'>{item.title}</p>
             </div>
