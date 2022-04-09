@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Sattva&apos;22</title>
+        <title>SATTVA&apos;22</title>
         <meta name="description" content="Sattva Website" />
         <link rel="icon" href="/favicon.ico" />
         <link
