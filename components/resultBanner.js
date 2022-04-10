@@ -1,23 +1,14 @@
-import Image from 'next/image';
 import React from 'react'
 
-export default function Banner() {
+export default function ResultBanner() {
+
     return (
-        <div className="bg-black text-light h-screen bg-center lg:bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: `url(/images/banner3.png)` }}>
+        <div className="bg-black text-light h-screen lg:bg-right bg-center lg:bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: `url(/images/banner3.png)` }}>
             <div className='flex flex-col justify-center items-center h-screen'>
-                <div className='flex lg:space-x-4 space-x-2 font-roboto '>
-                    <Image
-                        src="/images/logo.png"
-                        alt="logo"
-                        width={160}
-                        height={230}
-                        className='mx-auto'
-                    />
-                </div>
                 <div className='flex flex-col text-center lg:pt-14 pt-8'>
                     <div className='flex flex-col space-y-4'>
                         <h1 className='font-plaster font-normal text-5xl lg:text-7xl'>Sattva’22</h1>
-                        <p className='font-roboto font-normal text-sm lg:text-xl uppercase tracking-wildestest'>Registration is now open</p>
+                        <p className='font-roboto font-bold text-5xl lg:text-7xl'>Results</p>
                     </div>
                 </div>
                 <div className='flex flex-col absolute text-center object-bottom lg:bottom-10 bottom-2'>

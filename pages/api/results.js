@@ -12,15 +12,17 @@ export async function getDataFromSheets() {
 
     const sheets = google.sheets({ version: 'v4', auth: jwt });
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: process.env.SPREADSHEET_ID,
-      range: process.env.SPREADSHEET_NAME,
+      spreadsheetId: process.env.SPREADSHEET_2_ID,
+      range: process.env.SPREADSHEET_2_NAME,
     });
 
     const rows = response.data.values;
     if (rows.length) {
       return rows.map((row) => ({
-        name: row[0],
-        points: row[1]
+        events: row[0],
+        first: row[1],
+        second: row[2],
+        third: row[3],
       }));
     }
   } catch (err) {
