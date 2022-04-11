@@ -10,21 +10,21 @@ export default function LiveEvents() {
             <div className='flex lg:flex-row flex-col w-full lg:max-w-3xl lg:space-x-4 space-y-2 lg:space-y-0'>
                 <div className='w-full max-w-3xl lg:space-y-4 space-y-2'>
                     <div className='flex flex-col space-y-2 bg-grayshade lg:px-12 lg:py-12 px-8 py-8 rounded-lg'>
-                        <h2 className='font-roboto font-semibold text-xl '>GANAMELA</h2>
+                        <h2 className='font-roboto font-semibold text-xl '>COMING SOON</h2>
                         <p className='font-roboto font-normal text-sm lg:text-lg'>Stage 1</p>
                     </div>
                     <div className='flex flex-col space-y-2 bg-grayshade lg:px-12 lg:py-12 px-8 py-8 rounded-lg'>
-                        <h2 className='font-roboto font-semibold text-xl '>KUCHIPUDI</h2>
+                        <h2 className='font-roboto font-semibold text-xl '>COMING SOON</h2>
                         <p className='font-roboto font-normal text-sm lg:text-lg'>Stage 2</p>
                     </div>
                 </div>
                 <div className='w-full max-w-3xl lg:space-y-4 space-y-2'>
                     <div className='flex flex-col space-y-2 bg-grayshade lg:px-12 lg:py-12 px-8 py-8 rounded-lg'>
-                        <h2 className='font-roboto font-semibold text-xl '>INSTRUMENTALS</h2>
+                        <h2 className='font-roboto font-semibold text-xl '>COMING SOON</h2>
                         <p className='font-roboto font-normal text-sm lg:text-lg'>Stage 3</p>
                     </div>
                     <div className='flex flex-col space-y-2 bg-grayshade lg:px-12 lg:py-12 px-8 py-8 rounded-lg'>
-                        <h2 className='font-roboto font-semibold text-xl '>RECITAION ENGLISH</h2>
+                        <h2 className='font-roboto font-semibold text-xl '>COMING SOON</h2>
                         <p className='font-roboto font-normal text-sm lg:text-lg'>Stage 4</p>
                     </div>
                 </div>
