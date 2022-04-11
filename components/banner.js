@@ -19,7 +19,7 @@ export default function Banner() {
                         <h1 className='font-plaster font-normal text-5xl lg:text-7xl'>Sattva’22</h1>
                         <p className='font-roboto font-normal text-sm lg:text-xl uppercase tracking-wildestest'>Results | Leaderboard | Updates</p>
                         <marquee>
-                        <p className='font-roboto font-semibold text-sm lg:text-xl'>Correction In SATTVA&apos;22 Rule Book</p>
+                            <p className='font-roboto font-semibold text-sm lg:text-xl'>Correction In SATTVA&apos;22 Rule Book</p>
                         </marquee>
                     </div>
                 </div>
