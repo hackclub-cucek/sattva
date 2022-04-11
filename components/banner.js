@@ -18,9 +18,12 @@ export default function Banner() {
                     <div className='flex flex-col space-y-4'>
                         <h1 className='font-plaster font-normal text-5xl lg:text-7xl'>Sattva’22</h1>
                         <p className='font-roboto font-normal text-sm lg:text-xl uppercase tracking-wildestest'>Results | Leaderboard | Updates</p>
+                        <marquee>
+                        <p className='font-roboto font-semibold text-sm lg:text-xl'>Correction In SATTVA&apos;22 Rule Book</p>
+                        </marquee>
                     </div>
                 </div>
-                <div className='flex flex-col absolute text-center object-bottom lg:bottom-10 bottom-2'>
+                <div className='flex flex-col animate-bounce absolute text-center object-bottom lg:bottom-10 bottom-2'>
                     <svg className='lg:flex hidden' width="36" height="76" viewBox="0 0 36 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.0001 59.758L25.4251 52.333L27.5461 54.454L18.0001 64L8.4541 54.454L10.5751 52.333L18.0001 59.758Z" fill="white" />
                         <path d="M18.0001 39.758L25.4251 32.333L27.5461 34.454L18.0001 44L8.4541 34.454L10.5751 32.333L18.0001 39.758Z" fill="white" />
