@@ -18,9 +18,6 @@ export default function Banner() {
                     <div className='flex flex-col space-y-4'>
                         <h1 className='font-plaster font-normal text-5xl lg:text-7xl'>Sattva’22</h1>
                         <p className='font-roboto font-normal text-sm lg:text-xl uppercase tracking-wildestest'>Results | Leaderboard | Updates</p>
-                        <marquee>
-                            <p className='font-roboto font-semibold text-sm lg:text-xl'>Correction In SATTVA&apos;22 Rule Book</p>
-                        </marquee>
                     </div>
                 </div>
                 <div className='flex flex-col animate-bounce absolute text-center object-bottom lg:bottom-10 bottom-2'>
