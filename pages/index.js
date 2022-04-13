@@ -32,7 +32,7 @@ export default function Home({ data }) {
       <main className=''>
         <Banner />
         <Leaderboard data={data} />
-        <LiveEvents />
+        {/* <LiveEvents /> */}
         <FeeDetails />
         {/* <OffStageEvents /> */}
         <Footer />
