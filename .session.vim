@@ -16,18 +16,23 @@ endif
 badd +47 pages/index.js
 badd +30 components/banner.js
 badd +11 pages/api/sheets.js
-badd +0 components/footer.js
+badd +8 components/footer.js
+badd +28 pages/results.js
+badd +13 components/resultBanner.js
+badd +18 components/resultsList.js
+badd +36 components/leaderboard.js
+badd +106 components/feeDetails.js
 argglobal
 %argdel
-edit components/footer.js
+edit components/leaderboard.js
 argglobal
-balt pages/index.js
-let s:l = 11 - ((10 * winheight(0) + 18) / 37)
+balt components/footer.js
+let s:l = 37 - ((21 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 11
-normal! 032|
+keepjumps 37
+normal! 038|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
