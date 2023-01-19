@@ -33,18 +33,20 @@ export default function Leaderboard({ data }) {
           </div>
           <p className="text-right">Points</p>
         </div>
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-between px-5 py-4 rounded-lg border-2 border-white border-opacity-50 "
-          >
-            <div className="flex justify-start space-x-10 pr-4">
-              <p className="text-left">{index + 1}</p>
-              <p className="text-left">{item.name}</p>
+        {data
+          .sort((a, b) => b.points - a.points)
+          .map((item, index) => (
+            <div
+              key={index}
+              className="flex justify-between px-5 py-4 rounded-lg border-2 border-white border-opacity-50 "
+            >
+              <div className="flex justify-start space-x-10 pr-4">
+                <p className="text-left">{index + 1}</p>
+                <p className="text-left">{item.name}</p>
+              </div>
+              <p className="text-right">{item.points}</p>
             </div>
-            <p className="text-right">{item.points}</p>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
